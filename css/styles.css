@@ -3,7 +3,7 @@
 body {
     font-family: "Roboto", sans-serif;
     background-color: #ffffff;
-    color: #434455
+    color: #434455;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -24,17 +24,23 @@ a {
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
 }
 
 .container {
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+
 }
 
+/*        header 
+============================= */
 
 .container-header {
     display: flex;
@@ -150,28 +156,35 @@ address {
     color:#404bbf;
 }
 
+/*            main 
+======================================= */
 
 .main-title {
     background-color: #2E2F42;
-    padding: 188px 0;
+    padding: 72px 0;
+    /* padding: 188px 0; */
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1440px;
+    max-width: 100%;
+    /* max-width: 1440px; */
     margin: 0 auto;
 }
 
 
 .main-text {
     color: #ffffff;
+    font-size: 36px;
     font-weight: 700;
-    font-size: 56px;
+    /* font-size: 56px; */
     line-height: 1.07;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em; 
     text-align: center;
-    max-width: 496px;
-    margin: 0 auto 48px;
+    /* max-width: 496px; */
+    max-width: 216px;
+    margin: 0 auto 72px;
+    /* margin: 0 auto 48px; */
 }
 
 .main-button {
@@ -201,6 +214,9 @@ address {
     background-color: #404BBF;
 }
 
+/*             description
+=========================================== */
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -214,23 +230,27 @@ address {
     overflow: hidden;
     }
 
-.descritpion .section{
-    padding-top: 120px;
-    padding-bottom: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.descritpion {
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    
 }
 
 .description-item {
-    width: calc((100% - 72px) / 4);
+    width: 288px;
+    margin-bottom: 72px;
+}
+
+.description-item:last-child {
+    margin-bottom: 0;
 }
 
 .description-list {
-    display: flex;
-    flex-direction: row;
+    margin: 0px auto;
+    /* display: flex; */
+    /* flex-direction: row;
     justify-content: space-between;
-    gap: 24px;
+    gap: 24px; */
 }
 
 .description-block {
@@ -253,17 +273,21 @@ address {
     align-items: center;
 }
 
-.description-list .description-item .description-title {
+.description-title {
+    font-weight: 700;
+    font-size: 36px;     
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
+    /* font-weight: 500;
+    font-size: 20px; */
     line-height: 24px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em; 
     color: #2E2F42;
     margin-bottom: 8px;
+    text-align: center;
 }
 
-.description-list .description-item .description-text {
+.description-text {
+    font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -279,7 +303,7 @@ address {
 }
 
 
-.team .team-title {
+ .team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -299,6 +323,11 @@ img {
     width: 264px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+
+}
+
+.team-item:last-child {
+    margin-bottom: 0;
 }
 
 .team-item .team-text {
@@ -309,9 +338,10 @@ img {
 }
 
 .team-list {
-    display: flex;
+    margin: 0 auto;
+    /* display: flex;
     justify-content: space-between;
-    gap: 24px;
+    gap: 24px; */
 }
 
 .team-list .team-item .team-name {
@@ -367,9 +397,11 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ==================================================== */
+/*             portfolio
+==================================================== */
 
-.portfolio .portfolio-title {
+
+.portfolio-title {
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.02em;
@@ -388,10 +420,10 @@ img {
 
 
 .portfolio-list {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 48px;
+    row-gap: 48px; */
 }
 
 .img-box {
@@ -415,8 +447,15 @@ img {
 }
 
 .portfolio-item {
-    width: calc((100% - 48px) / 3); 
+    /* width: calc((100% - 48px) / 3); 
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    width: 288px;
+    margin-bottom: 48px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:last-child {
+    margin-bottom: 0;
 }
 
 .portfolio-item:hover {
@@ -430,7 +469,7 @@ img {
     
 }
 
-.portfolio-list .portfolio-item .portfolio-item-title {
+.portfolio-item-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -439,12 +478,15 @@ img {
     margin-bottom: 8px
 }
 
-.portfolio-list .portfolio-item .portfolio-text {
+.portfolio-text {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #434455;
 }
+
+/*         footer   
+================================= */
 
 .footer {
     background-color: #2E2F42;
@@ -649,9 +691,9 @@ padding-left: 16px;
     width: 100%;
     background: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-    /* opacity: 0;
+    opacity: 0;
     visibility: hidden; 
-    pointer-events: none; */
+    pointer-events: none;
 } 
 
 .window {
@@ -902,3 +944,136 @@ input {
 }
 
 
+@media (max-width: 767px) {
+   
+    .team-item {
+        margin: 0px auto 96px ;
+    }
+
+    .description-item {
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+}
+
+@media (max-width: 1439px) {
+    .description-block {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-title {
+        padding: 112px 0; 
+     }
+
+    .main-text {
+        font-size: 56px; 
+        max-width: 496px; 
+        margin: 0 auto 36px; 
+    }
+
+    .descritpion {
+        padding-top: 96px;
+        padding-bottom: 96px;    
+    }
+
+    .description-item {
+        max-width: 356px;
+        width: calc((100% - 72px) / 2); 
+    }
+
+    .description-list {
+        display: flex; 
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 24px;
+   }
+
+   .description-title {    
+       font-weight: 700;
+       font-size: 36px;
+       text-align: start;
+   }
+   
+   .team-list {
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       row-gap: 64px;
+       column-gap: 24px;
+   }
+
+   .team-item {
+       max-width: 264px;
+       width: calc((100% - 64px) / 2); 
+   }
+
+   .portfolio-list {
+       display: flex;
+       flex-wrap: wrap;
+       column-gap: 24px;
+   }
+
+   .portfolio-item {
+       max-width: 356px;
+       width: calc((100% - 72px) / 2); 
+   }
+} 
+
+@media (min-width: 1440px) {
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main-title {
+       padding: 188px 0; 
+    }
+
+    .main-text {
+       margin: 0 auto 48px; 
+    }
+
+    .descritpion {
+        padding-top: 120px;
+        padding-bottom: 120px; 
+        
+    }
+
+    .description-item {
+        width: 264px;
+     }
+
+    .description-list {
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         gap: 24px; 
+    }
+
+    .description-title {    
+        font-weight: 500;
+        font-size: 20px; 
+    }
+
+    .team-list {
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .portfolio-list {
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+
+    .portfolio-item {
+        width: calc((100% - 48px) / 3); 
+    }
+}
