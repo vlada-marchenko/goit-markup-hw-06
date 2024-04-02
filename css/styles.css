@@ -103,7 +103,7 @@ color: #4D5AE5;
 font-family: "Raleway", sans-serif;
 line-height: 1.17;
 /* margin-right: 76px; */
-padding: 16px 0;
+padding: 16px 0; 
 }
 
 
@@ -559,7 +559,9 @@ img {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    display: block;
     text-align: center;
+    padding: 0;
 }
 
 
@@ -648,12 +650,7 @@ img {
     align-items: center;
 }
 
-.footer-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 24px;
-}
+
 
 .input-footer {
     box-sizing: border-box;
@@ -670,12 +667,17 @@ img {
     letter-spacing: 0.04em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: #ffffff;
-
 }
 
 .input-area {
     display: flex;
 
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 
@@ -710,8 +712,8 @@ padding-left: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 77px;
-    margin-right: 78px;
+    margin-left: auto;
+    margin-right: auto;
     /* margin-left: 24px; */
     font-size: 16px;
     font-weight: 500;
@@ -727,6 +729,9 @@ padding-left: 16px;
 
 }
 
+/*        overlay 
+============================= */
+
 .overlay {
     position: fixed;
     top: 0;
@@ -734,13 +739,14 @@ padding-left: 16px;
     width: 100%;
     background: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-    opacity: 0;
+    /* opacity: 0;
     visibility: hidden; 
-    pointer-events: none;
+    pointer-events: none; */
 } 
 
 .window {
-    width: 408px;
+    /* width: 408px; */
+    width: 288px;
     min-height: 584px;
     background-color: #FCFCFC;
     border-radius: 4px;
@@ -749,7 +755,8 @@ padding-left: 16px;
     left: 50%;
     transform: translate(-50%, -50%);
     visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px; 
+    /* padding: 72px 24px 24px 24px;  */
+    padding: 72px 16px 14px 16px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -842,8 +849,8 @@ padding-left: 16px;
     min-width: 169px;
     height: 56px;
     color: #FFFFFF;
-    left: 50%;
-    transform: translateX(50%);
+    left: 25%;
+    transform: translateX(25%);
     bottom: 0;
     margin-top: 24px;
     display: block;
@@ -1108,14 +1115,79 @@ input {
    }
 
    .social-text {
-    text-align: start;
+      text-align: start;
 }
 
-.email-input {
-    max-width: 453px;
-    display: inline-block;
+    .footer-div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+
+    .logo {
+        padding: 0;
+    }
+
+    .footer .logo {
+        display: flex;
+        text-align: center;
+    }
+
+    .footer-text {
+        font-size: 16px;
+        color: #F4F4FD;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        width: 264px;
+
+    }
+
+    /*        overlay 
+============================= */
+
+
+   .window {
+    width: 408px;
+    padding: 72px 24px 24px 24px; 
+    }
+
+    .social-media-container {
+    
+    }
+
+    .email-input {
+        width: 453px;
+        justify-content: start;
+    }
+    
+    .footer-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .input-footer {
+        width: 264px;
+    }
+
+    .input-title {   
+        text-align: start;
+    }
+
+   .email-input {
+      max-width: 453px;
+      display: inline-block;
     
 }
+ 
+   .window-send {
+    left: 50%;
+    transform: translateX(50%);
+   }
 
 } 
 
@@ -1191,10 +1263,21 @@ input {
         width: calc((100% - 48px) / 3); 
     }
 
+
     .footer-div {
         flex-direction: row;
         align-items: baseline;
         flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .logo {
+        padding: 0;
+    }
+
+    .footer .logo {
+        display: flex;
+        text-align: center;
     }
 
     .footer-text {
@@ -1203,30 +1286,34 @@ input {
         line-height: 1.5;
         letter-spacing: 0.02em;
         width: 264px;
+
     }
 
     .social-media-container {
-        margin-right: 80px;
     
     }
 
     .email-input {
-        max-width: 453px;
-        flex-direction: row;
+        width: 453px;
+        justify-content: start;
     }
     
     .footer-form {
+        display: flex;
         flex-direction: row;
-
+        justify-content: center;
+        gap: 24px;
     }
 
-    .input-button {
-        margin-left: 24px; 
+    .input-footer {
+        width: 264px;
     }
 
     .input-title {   
         text-align: start;
     }
+
+
 }
 
 @media screen and (min-width: 768px) {
