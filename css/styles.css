@@ -226,9 +226,9 @@ address {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* opacity: 0;
+     /* opacity: 0;
     pointer-events: none;
-    visibility: hidden; */
+    visibility: hidden;  */
 }
 
 
@@ -238,18 +238,20 @@ address {
    border-radius: 50%;
    background: transparent;
    border: 1px solid #e7e9fc;
-   cursor: pointer; 
    width: 24px;
    height: 24px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.header-button-close:hover, .header-button-close:focus {
+.header-button-close:hover {
     background-color: #404bbf;
     border: none;
     fill: #ffffff;
 }
 
-.header-button-close:hover, .header-button-close:focus + .icon-close {
+.header-button-close:hover + .icon-close {
     fill: #ffffff;
 }
 
@@ -274,8 +276,7 @@ address {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list-menu .nav-item-menu .nav-link-menu:hover,
-.nav-list-menu .nav-item-menu .nav-link-menu:focus {
+.nav-list-menu .nav-item-menu .nav-link-menu:hover {
     color: #404bbf;
 }
 
@@ -289,14 +290,11 @@ address {
     flex-direction: column;
     gap: 24px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
 
 
 
-.address-item-menu .address-link:hover,
-.address-item-menu .address-link:focus {
+.address-item-menu .address-link:hover {
     color:#404bbf;
 }
 
