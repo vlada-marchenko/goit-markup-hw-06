@@ -182,6 +182,9 @@ address {
     fill: #2E2F42;
 }
 
+.header-button-open .menu-icon-open:hover {
+    fill: #404bbf;
+}
 
 /*           menu 
 ============================== */
